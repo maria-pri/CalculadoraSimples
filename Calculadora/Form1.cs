@@ -248,9 +248,9 @@ namespace Calculadora
                 txtOperacao.Text = Apagar;
             }
 
-            catch(Exception)
+            catch(Exception ex)
             {
-
+                MessageBox.Show("Ocorreu um erro: " + ex.Message);
             }
         }
     }
